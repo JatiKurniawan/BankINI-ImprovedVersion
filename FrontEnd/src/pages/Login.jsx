@@ -1,15 +1,15 @@
 import React from "react";
-import LogoText from "../component/reuse/LogoText";
 import Card from "../component/log/Card";
+import Navigation from "../component/Navigation";
 
 function LogIn() {
     return (
-        <div>
-            <div className="">
-                <LogoText />
-                <img src="assets/login.png" alt="" />
+        <div className="h-screen">
+            <Navigation status={ "False" }/>
+            <div className="flex flex-row h-full pt-20 px-40 gap-8">
+                <img src="assets/login.png" alt="" className="h-[444px]" />
+                <Card type={ "login" } />
             </div>
-            <Card type={ "login" } />
         </div>
     )
 }
